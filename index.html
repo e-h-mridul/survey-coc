@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <h1 id="title">Clash of Clans Survey Form</h1>
+        <p id="description">
+            Please fill out this form with the required information
+        </p>
+        <form id="survey-form">
+            <div class="form-survey">
+                <label id="name-label" class="big">Name <input id="name" placeholder="Name" required /></label>
+            </div>
+            <div class="form-survey">
+                <label id="email-label" class="big">Email <span class="clue">(supercell-email)</span><input id="email"
+                        placeholder="Email" type="email" required /></label>
+            </div>
+            <div class="form-survey">
+                <label id="number-label" class="big">Age <span class="clue">(optional)</span>
+                    <input id="number" placeholder="number" type="number" name="Age" min="10" max="99" /></label>
+            </div>
+            <div class="form-survey">
+                <label class="big">Which townhall you are in:
+                    <select id="dropdown">
+                        <option disabled selected value>(select one)</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                    </select></label>
+            </div>
+            <div class="form-survey">
+                <legend class="big">Would you recommend this game?</legend>
+                <label for="choice" class="small"><input id="choice" type="radio" value="1" name="game"
+                        class="inline" />Definitely</label>
+                <label for="choice" class="small"><input id="choice" type="radio" value="2" name="game" class="inline" />Maybe</label>
+                <label for="choice" class="small"><input id="choice" type="radio" value="3" name="game" class="inline" />Not
+                    Sure</label>
+            </div>
+            <div class="form-survey">
+                <legend class="big">How you did hear about this game?</legend>
+                <label for="choice" class="small"><input id="choice" type="checkbox" value="4" name="four" class="inline" />YouTube</label>
+                <label for="choice" class="small"><input id="choice" type="checkbox" value="5" name="five" class="inline" />Facebook</label>
+                <label for="choice" class="small"><input id="choice" type="checkbox" value="6" name="six" class="inline" />Twitter</label>
+                <label for="choice" class="small"><input id="choice" type="checkbox" value="7" name="seven" class="inline" />Instagram</label>
+                <label for="choice" class="small"><input id="choice" type="checkbox" value="8" name="eight" class="inline" />Thread</label>
+                <label for="choice" class="small"><input id="choice" type="checkbox" value="9" name="nine" class="inline" />Printerest</label>
+                <label for="choice" class="small"><input id="choice" type="checkbox" value="10" name="ten" class="inline" />Playstore</label>
+                <label for="choice" class="small"><input id="choice" type="checkbox" value="11" name="eleven" class="inline" />Friend</label>
+            </div>
+            <div class="form-survey">
+                <label class="big">Give us some recommendations for the game:
+                    <textarea rows="3" cols="30" placeholder="I would like......"></textarea>
+                </label>
+            </div>
+            <div class="form-survey">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

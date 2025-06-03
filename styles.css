@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    font-family: Tahoma;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(115deg, rgba(116, 65, 65, 0.353), rgba(136, 136, 206, 0.7)), url(https://pbs.twimg.com/media/FRq8QWsXsAM-WfD.jpg:large);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 50px;
+    background-image: url(https://i.pinimg.com/originals/0a/5b/da/0a5bdaafad632f587378406336de3318.jpg);
+    position: relative;
+    z-index: 1;
+}
+
+
+
+h1 {
+    margin: 20;
+}
+
+h1,
+p {
+    text-align: center;
+    padding: 0;
+}
+
+h1,
+p,
+label,
+legend {
+    color: white;
+}
+
+
+.form-survey {
+    margin-bottom: 3px;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+.clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,
+textarea {
+    color: black;
+}
+
+.big {
+    font-size: 1.2rem;
+}
+
+.small {
+    font-size: 0.8rem;
+}
+
+button {
+    background-color: rgb(55, 175, 101);
+    width: 100%;
+    height: 2em;
+    font-size: 1.1rem;
+    border-radius: .25rem;
+    font-weight: 500;
+    color: #ffffff;
+}
